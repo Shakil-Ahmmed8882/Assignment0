@@ -208,8 +208,7 @@ nav > ul > li:hover ul {
 .testimonials-sec {
   width: 100%;
   padding: 4rem;
-  background: url("../images/header-bg.png"),
-    linear-gradient(rgb(0, 0, 0), black);
+  background: linear-gradient(rgba(0, 0, 0, 0.069), rgba(0, 0, 0, 0.069));
   display: grid;
   align-items: center;
   justify-content: center;
@@ -384,7 +383,7 @@ form input[type="submit"] {
   font-size: 16px;
   background-color: #fff;
   color: #6625ff;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
 form input[type="submit"]:hover {
