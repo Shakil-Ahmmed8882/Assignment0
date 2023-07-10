@@ -213,6 +213,7 @@ nav > ul > li:hover ul {
   display: grid;
   align-items: center;
   justify-content: center;
+  margin-top: 15rem;
 }
 .testimonials-container {
   display: flex;
@@ -262,6 +263,135 @@ nav > ul > li:hover ul {
   background-color: #ffffffde;
   outline: 2px solid rgba(0, 0, 255, 0.127);
 }
+
+/* Services */
+.service {
+  padding: 5rem 5rem 0 5rem;
+  height: 55vh;
+  min-height: 55vh;
+  text-align: center;
+  margin-bottom: 10rem;
+  background: linear-gradient(rgb(59, 144, 242), rgb(3, 122, 182));
+}
+.service-wrapper {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.118);
+}
+.service h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.services-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.4rem;
+}
+
+.services-list li:last-child {
+  border-bottom: none;
+}
+
+.services-list li::before {
+  content: "\2022";
+  color: #8000ff;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.services-list li:hover {
+  background-color: #f5f5f5;
+}
+
+.services-list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.services-list li a:hover {
+  color: #ff6600;
+}
+/* ================ */
+/* Contact */
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgb(21, 62, 117);
+  padding: 3rem;
+  color: #fff;
+  background: linear-gradient(
+      90deg,
+      rgba(21, 63, 117, 0.931) 0%,
+      rgba(99, 59, 210, 0.91) 100%
+    ),
+    url("../images/undraw_android_jr64.png") fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #d5d5d5;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #cbcbcb;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #5e516e1a;
+  border-bottom: 1px solid #fff;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #6625ff;
+  margin-top: .8rem;
+}
+
+form input[type="submit"]:hover {
+  background-color: #5d14ef;
+  color: #ffffff;
+}
+
 /* footer */
 footer {
   width: 100%;
@@ -285,10 +415,10 @@ footer {
 .fa-facebook {
   color: rgb(78, 166, 244) !important;
 }
-.fa-twitter{
+.fa-twitter {
   color: rgb(83, 219, 252) !important;
 }
-.fa-instagram{
+.fa-instagram {
   color: rgb(244, 139, 78) !important;
 }
 .footer-column h3 {
@@ -302,4 +432,21 @@ footer {
 }
 .footer-column *:hover {
   color: #ffffff;
+}
+
+/* Breakpoint */
+@media screen and (max-width: 1000px) {
+  .service {
+    height: auto;
+    padding-bottom: 5rem;
+    margin: 0;
+  }
+  .service-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .testimonials-sec {
+    margin-top: 1rem;
+  }
 }
